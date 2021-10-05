@@ -13,15 +13,13 @@
             <th>Priority</th>
         </tr>
     </thead>
-    <tbody>
         @foreach (var task in Model.Tasks)
         {
             <tr>
-                <td>@Html.DisplayFor(modelItem => task.Id)</td>
-                <td>@Html.DisplayFor(modelItem => task.Title)</td>
-                <td>@Html.DisplayFor(modelItem => task.Description)</td>
-                <td>@Html.DisplayFor(modelItem => task.Priority)</td>
+                <td>@task.Id</td>
+                <td>@task.Title</td>
+                <td>@task.Description</td>
+                <td>@task.Priority</td>
             </tr>
         }
-    </tbody>
 </table>
